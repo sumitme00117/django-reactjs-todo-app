@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Object</title>
+</head>
+<body>
+    <h1>Object Details</h1>
+    {% if object_data %}
+        <p><strong>ID:</strong> {{ object_data.id }}</p>
+        <p><strong>Name:</strong> {{ object_data.name }}</p>
+        <p><strong>Year:</strong> {{ object_data.data.year }}</p>
+        <p><strong>Price:</strong> ${{ object_data.data.price }}</p>
+        <p><strong>CPU Model:</strong> {{ object_data.data.CPU_model }}</p>
+        <p><strong>Hard Disk Size:</strong> {{ object_data.data.Hard_disk_size }}</p>
+    {% else %}
+        <p>No object data available.</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Object</title>
+</head>
+<body>
+    <h1>Delete Object</h1>
+    <p>Click the button below to send a DELETE request to the API and remove the object with ID 6.</p>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Delete Object</button>
+    </form>
+</body>
+</html>
